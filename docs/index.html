@@ -147,44 +147,6 @@
 <p>&#x3053;&#x306E;&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x306F;&#x3001;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x521D;&#x5B66;&#x8005;&#x5411;&#x3051;&#x306B;&#x4F5C;&#x6210;&#x3057;&#x305F; Kotlin &#x5165;&#x9580;&#x66F8;&#x3067;&#x3059;&#x3002;
 Java &#x7B49;&#x306E;&#x4ED6;&#x306E;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30DF;&#x30F3;&#x30B0;&#x8A00;&#x8A9E;&#x306E;&#x7D4C;&#x9A13;&#x8005;&#x3067; Kotlin &#x306E;&#x52C9;&#x5F37;&#x3092;&#x59CB;&#x3081;&#x308B;&#x65B9;&#x306F;&#x3001; <a href="https://kotlinlang.org/docs/reference/" target="_blank">Kotlin &#x516C;&#x5F0F;&#x30EA;&#x30D5;&#x30A1;&#x30EC;&#x30F3;&#x30B9;</a> &#x3084;
 <a href="https://kotlinlang.org/docs/tutorials/koans.html" target="_blank">Kotlin koans</a> &#x3092;&#x7528;&#x3044;&#x3066;&#x5B66;&#x7FD2;&#x3059;&#x308B;&#x3053;&#x3068;&#x3092;&#x304A;&#x3059;&#x3059;&#x3081;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<h2 id="&#x3053;&#x306E;&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;">&#x3053;&#x306E;&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;</h2>
-<p>&#x3053;&#x306E;&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x969B;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;&#x3067;&#x3059;&#x3002;
-Kotlin &#x3092;&#x52C9;&#x5F37;&#x3055;&#x308C;&#x308B;&#x65B9;&#x306F;&#x5BFE;&#x5FDC;&#x4E0D;&#x8981;&#x3067;&#x3059;&#x3002;
-Kotlin &#x81EA;&#x4F53;&#x306E;&#x74B0;&#x5883;&#x69CB;&#x7BC9;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F; <a href="environment.md">&#x3053;&#x3061;&#x3089;&#x306E;&#x30DA;&#x30FC;&#x30B8;</a> &#x3092;&#x53C2;&#x7167;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
-<p>&#x3053;&#x306E;&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x306F; <a href="https://www.gitbook.com" target="_blank">GitBook</a> &#x3092;&#x7528;&#x3044;&#x3066;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
-<h3 id="mac">Mac</h3>
-<ol>
-<li><a href="https://brew.sh/index_ja" target="_blank">Homebrew</a> &#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;<pre><code class="lang-sh">/usr/bin/ruby <span class="hljs-_">-e</span> <span class="hljs-string">&quot;<span class="hljs-variable">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>&quot;</span>
-brew update
-brew upgrade
-</code></pre>
-</li>
-<li><a href="https://github.com/hokaccha/nodebrew" target="_blank">nodebrew</a> &#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;<pre><code class="lang-sh">brew install nodebrew
-<span class="hljs-built_in">echo</span> <span class="hljs-string">&apos;export PATH=$HOME/.nodebrew/current/bin:$PATH&apos;</span> &gt;&gt; ~/.bashrc
-<span class="hljs-built_in">source</span> ~/.bashrc
-</code></pre>
-</li>
-<li><a href="https://nodejs.org/" target="_blank">node.js</a> &#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;<pre><code class="lang-sh">mkdir -p ~/.nodebrew/src
-nodebrew install-binary latest
-nodebrew use latest
-</code></pre>
-</li>
-<li><a href="https://github.com/GitbookIO/gitbook-cli" target="_blank">gitbook-cli</a> &#x306E;&#x30A4;&#x30F3;&#x30B9;&#x30C8;&#x30FC;&#x30EB;<pre><code class="lang-sh">npm install --global gitbook-cli
-</code></pre>
-</li>
-</ol>
-<h3 id="&#x52D5;&#x4F5C;&#x78BA;&#x8A8D;">&#x52D5;&#x4F5C;&#x78BA;&#x8A8D;</h3>
-<ul>
-<li>&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x306E;&#x30D3;&#x30EB;&#x30C9;<pre><code class="lang-sh">./build.sh
-</code></pre>
-</li>
-<li>&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x306E;&#x30D3;&#x30EB;&#x30C9;&#x3068; Web &#x30B5;&#x30FC;&#x30D0;&#x306E;&#x8D77;&#x52D5;<pre><code class="lang-sh">./serve.sh
-</code></pre>
-<ul>
-<li><a href="http://localhost:4000/" target="_blank">http://localhost:4000/</a> &#x304B;&#x3089;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3067;&#x304D;&#x307E;&#x3059;</li>
-</ul>
-</li>
-</ul>
 
                                 
                                 </section>
@@ -220,7 +182,7 @@ nodebrew use latest
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2019-10-22T04:55:14.295Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-22T04:55:52.047Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2019-10-22T05:14:17.346Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-22T05:14:32.857Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 readonly SCRIPT_DIR=$(cd $(dirname $0); pwd)
-gitbook serve ${SCRIPT_DIR} ${SCRIPT_DIR}/docs
+gitbook serve ${SCRIPT_DIR}/src/docs ${SCRIPT_DIR}/docs
