@@ -27,7 +27,7 @@ fun main() {
 上記のコードでは、 `helloWorld` という名前の変数で、 `"Hello World!"` というデータの置き場所になっています。
 そして 3 行目の `println(helloWorld)` にて変数 `helloWorld` を使用しています。
 
-専門的には、 `helloWorld` という名前の変数を **宣言** し、 `"Hello World!"` という値 (データ) を **代入** し、
+専門的には、 `helloWorld` という名前の変数を **宣言** し、 `"Hello World!"` という値 (データ) を代入演算子 `=` を用いて **代入** し、
 3行目で`helloWorld` という変数を **参照** している、と表現します。
 
 {% hint style="info" %}

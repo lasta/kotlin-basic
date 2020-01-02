@@ -73,6 +73,7 @@ fun main() {
 
 ![Running Hello World](./assets/hello_world-08_run.png)
 
+Run をクリックすると、コンパイル (プログラムコードを機械が理解できるように変換する作業) とプログラムの実行が行われます。
 少し待つと、 "4: Run" ツールウィンドウが開き、 `Hello World!` を表示した上でプログラムが終了したら成功です。
 
 ![Run Tool Window](./assets/hello_world-09_run_result.png)
