@@ -1,0 +1,413 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>型 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codeblock-filename/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="variable.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter01/hello_world.html">
+            
+                <a href="../chapter01/hello_world.html">
+            
+                    
+                    Chapter 1 - Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter02.html">
+            
+                <a href="chapter02.html">
+            
+                    
+                    Chapter 2 - 変数と型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="variable.html">
+            
+                <a href="variable.html">
+            
+                    
+                    変数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="type.html">
+            
+                <a href="type.html">
+            
+                    
+                    型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >型</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x578B;">&#x578B;</h1>
+<p><a href="variable.html">&#x5909;&#x6570;</a> &#x306B;&#x3066;&#x3001;&#x4EE5;&#x4E0B;&#x306E;&#x30B3;&#x30FC;&#x30C9;&#x306E; <code>val</code> &#x306F;&#x5909;&#x6570;&#x5BA3;&#x8A00;&#x306E;&#x30AD;&#x30FC;&#x30EF;&#x30FC;&#x30C9;&#x3001; <code>helloWorld</code> &#x306F;&#x5909;&#x6570;&#x3001; <code>=</code> &#x306F;&#x4EE3;&#x5165;&#x6F14;&#x7B97;&#x5B50;&#x3001;
+<code>&quot;Hello World!&quot;</code> &#x306F;&#x5024;&#x3067;&#x3042;&#x308B;&#x3068;&#x3044;&#x3046;&#x8AAC;&#x660E;&#x3092;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;</p>
+<div><p class="code-filename">HelloWorld.kt</p></div>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> helloWorld</span>: String = <span class="hljs-string">&quot;Hello World!&quot;</span>
+    println(helloWorld)
+}
+</code></pre>
+<p>&#x6B8B;&#x308B;&#x306F; <code>:</code> &#x3068; <code>String</code> &#x3067;&#x3059;&#x3002;</p>
+<p><code>String</code> &#x306F; <code>helloWorld</code> &#x306E;&#x578B;&#x306E;&#x540D;&#x524D;&#x3001; <code>:</code> &#x306F;&#x5909;&#x6570;&#x540D;&#x3068;&#x578B;&#x540D;&#x3092;&#x533A;&#x5207;&#x308B;&#x6587;&#x5B57;&#x3067;&#x3059;&#x3002;
+<code>HelloWorld.kt</code> &#x306E;2&#x884C;&#x76EE;&#x306B;&#x3064;&#x3044;&#x3066;&#x307E;&#x3068;&#x3081;&#x308B;&#x3068;&#x3001;</p>
+<ul>
+<li><code>val</code> : &#x5909;&#x66F4;&#x4E0D;&#x53EF;&#x80FD;&#x306A;&#x5909;&#x6570;&#x5BA3;&#x8A00;&#x306E;&#x30AD;&#x30FC;&#x30EF;&#x30FC;&#x30C9;</li>
+<li><code>helloWorld</code> : &#x5909;&#x6570;&#x540D;</li>
+<li><code>:</code> : &#x5909;&#x6570;&#x540D;&#x3068;&#x578B;&#x5B9A;&#x7FA9;&#x306E;&#x533A;&#x5207;&#x308A;&#x6587;&#x5B57;</li>
+<li><code>String</code> : &#x5909;&#x6570; <code>helloWorld</code> &#x306E;&#x578B;&#x5B9A;&#x7FA9;</li>
+<li><code>=</code> : &#x4EE3;&#x5165;&#x6F14;&#x7B97;&#x5B50;</li>
+<li><code>&quot;Hello World!&quot;</code> : <code>String</code> &#x578B;&#x306E;&#x5024;</li>
+</ul>
+<p>&#x3068;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x578B;&#x3068;&#x306F;&#x3001;&#x5909;&#x6570;&#x306B;&#x683C;&#x7D0D;&#x3059;&#x308B;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x7A2E;&#x985E;&#x3067;&#x3059;&#x3002;
+<code>String</code> &#x578B;&#x306F;&#x6587;&#x5B57;&#x5217;&#x578B;&#x3068;&#x3082;&#x547C;&#x3070;&#x308C;&#x3001;&#x305D;&#x306E;&#x540D;&#x306E;&#x901A;&#x308A;&#x6587;&#x5B57;&#x5217; (&#x8907;&#x6570;&#x306E;&#x6587;&#x5B57;) &#x3092;&#x6271;&#x3046;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;&#x578B;&#x3067;&#x3059;&#x3002;</p>
+<h2 id="&#x4EE3;&#x8868;&#x7684;&#x306A;&#x578B;-kotlin-&#x306E;&#x7D44;&#x307F;&#x8FBC;&#x307F;&#x578B;">&#x4EE3;&#x8868;&#x7684;&#x306A;&#x578B; (Kotlin &#x306E;&#x7D44;&#x307F;&#x8FBC;&#x307F;&#x578B;)</h2>
+<p>Kotlin &#x3067;&#x306F;&#x4E88;&#x3081;&#x3044;&#x304F;&#x3064;&#x304B;&#x306E;&#x578B;&#x304C;&#x5B9A;&#x7FA9;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;
+&#x305D;&#x306E;&#x3046;&#x3061;&#x3001;&#x4E00;&#x822C;&#x7684;&#x306B;&#x3088;&#x304F;&#x4F7F;&#x308F;&#x308C;&#x308B;&#x3082;&#x306E;&#x3092;&#x7D39;&#x4ECB;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x578B;&#x540D;</th>
+<th>&#x8AAC;&#x660E;</th>
+<th>&#x4F8B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>String</td>
+<td>&#x6587;&#x5B57;&#x5217; (&#x30C6;&#x30AD;&#x30B9;&#x30C8;)</td>
+<td>&quot;Hello World!&quot;</td>
+</tr>
+<tr>
+<td>Int</td>
+<td>&#x6574;&#x6570;&#x5024; (32bit &#x7B26;&#x53F7;&#x3064;&#x304D;&#x6574;&#x6570;)</td>
+<td>42</td>
+</tr>
+<tr>
+<td>Double</td>
+<td>&#x5C0F;&#x6570;&#x5024; (64bit &#x7B26;&#x53F7;&#x3064;&#x304D;&#x6D6E;&#x52D5;&#x5C0F;&#x6570;&#x70B9;&#x6570;)</td>
+<td>3.14159265</td>
+</tr>
+<tr>
+<td>Char</td>
+<td>1&#x6587;&#x5B57;</td>
+<td>&apos;A&apos;</td>
+</tr>
+<tr>
+<td>Boolean</td>
+<td>&#x771F;&#x507D;&#x5024;</td>
+<td>true</td>
+</tr>
+<tr>
+<td>List</td>
+<td>&#x540C;&#x3058;&#x578B;&#x306E;&#x8981;&#x7D20;&#x3092;&#x9806;&#x5E8F;&#x4ED8;&#x3051;&#x3066;&#x8907;&#x6570;&#x4E26;&#x3079;&#x305F;&#x3082;&#x306E; (&#x30EA;&#x30B9;&#x30C8;)</td>
+<td>1, 4, 9, 9, 1</td>
+</tr>
+<tr>
+<td>Set</td>
+<td>&#x540C;&#x3058;&#x578B;&#x306E;&#x8981;&#x7D20;&#x3092;&#x91CD;&#x8907;&#x306A;&#x304F;&#x96C6;&#x3081;&#x305F;&#x3082;&#x306E; (&#x96C6;&#x5408;)</td>
+<td>1, 4, 9</td>
+</tr>
+<tr>
+<td>Map</td>
+<td>&#x30AD;&#x30FC;&#x3092;&#x5024;&#x306B;&#x30DE;&#x30C3;&#x30D4;&#x30F3;&#x30B0;&#x3057;&#x305F;&#x3082;&#x306E;&#x3092;&#x96C6;&#x3081;&#x305F;&#x3082;&#x306E;</td>
+<td>&quot;one&quot; to 1, &quot;two&quot; to 2</td>
+</tr>
+</tbody>
+</table>
+<p>&#x305D;&#x308C;&#x305E;&#x308C;&#x306E;&#x578B;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x3001;&#x4ECA;&#x5F8C;&#x89E3;&#x8AAC;&#x3057;&#x307E;&#x3059;&#x3002;
+<!-- TODO: 各型の詳細を解説しているページへリンク --></p>
+<h2 id="&#x578B;&#x30A8;&#x30E9;&#x30FC;">&#x578B;&#x30A8;&#x30E9;&#x30FC;</h2>
+<p>&#x5909;&#x6570;&#x306B;&#x5024;&#x3092;&#x4EE3;&#x5165;&#x3059;&#x308B;&#x969B;&#x306B;&#x3001;&#x5909;&#x6570;&#x306E;&#x578B;&#x3068;&#x5024;&#x306E;&#x578B;&#x304C;&#x5408;&#x308F;&#x306A;&#x3044;&#x3053;&#x3068;&#x3092; <strong>&#x578B;&#x30A8;&#x30E9;&#x30FC;</strong> &#x3068;&#x547C;&#x3073;&#x307E;&#x3059;&#x3002;
+&#x5177;&#x4F53;&#x4F8B;&#x3092;&#x7528;&#x3044;&#x3066;&#x8AAC;&#x660E;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+  <span class="hljs-variable"><span class="hljs-keyword">val</span> helloWorld</span>: String = <span class="hljs-number">42</span>
+  println(helloWorld)
+}
+</code></pre>
+<blockquote>
+<p>error: the integer literal does not conform to the expected type String</p>
+<p>(&#x30A8;&#x30E9;&#x30FC;: &#x6574;&#x6570;&#x30EA;&#x30C6;&#x30E9;&#x30EB;&#x306F;&#x3001;&#x671F;&#x5F85;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x578B; String (&#x6587;&#x5B57;&#x5217;&#x578B;) &#x3068;&#x9069;&#x5408;&#x3057;&#x307E;&#x305B;&#x3093;)</p>
+</blockquote>
+<p>&#x5909;&#x6570; <code>helloWorld</code> &#x306E;&#x578B; <code>String</code> &#x3068;&#x4EE3;&#x5165;&#x3057;&#x3088;&#x3046;&#x3068;&#x3057;&#x305F;&#x5024; <code>42</code> &#x306E;&#x578B; <code>Int</code> &#x304C;&#x5408;&#x308F;&#x306A;&#x3044;&#x305F;&#x3081;&#x3001;&#x578B;&#x30A8;&#x30E9;&#x30FC;&#x304C;&#x767A;&#x751F;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;</p>
+<p>&#x3069;&#x3046;&#x3057;&#x3066;&#x3082; <code>42</code> &#x3068;&#x3044;&#x3046;&#x5024;&#x3092;&#x4EE3;&#x5165;&#x3057;&#x305F;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;&#x5909;&#x6570; <code>helloWorld</code> &#x306E;&#x578B;&#x3092; <code>String</code> &#x578B;&#x304B;&#x3089; <code>Int</code> &#x578B;&#x306B;&#x5909;&#x66F4;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+  <span class="hljs-variable"><span class="hljs-keyword">val</span> helloWorld</span>: <span class="hljs-keyword">Int</span> = <span class="hljs-number">42</span>
+  println(helloWorld)
+}
+</code></pre>
+<p>&#x3053;&#x308C;&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x3068;&#x3001; <code>&quot;Hello World!&quot;</code> &#x3067;&#x306F;&#x306A;&#x304F; <code>42</code> &#x304C;&#x51FA;&#x529B;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>&#x30EA;&#x30C6;&#x30E9;&#x30EB;</p>
+<p>&#x30BD;&#x30FC;&#x30B9;&#x30B3;&#x30FC;&#x30C9;&#x4E0A;&#x306B;&#x76F4;&#x63A5;&#x57CB;&#x3081;&#x8FBC;&#x307E;&#x308C;&#x305F;&#x5024;&#x306E;&#x3053;&#x3068;</p>
+<p><code>42</code> &#x306F;&#x6574;&#x6570;&#x578B;&#x306E;&#x30EA;&#x30C6;&#x30E9;&#x30EB;&#x306E;&#x305F;&#x3081; <strong>&#x6574;&#x6570;&#x30EA;&#x30C6;&#x30E9;&#x30EB;</strong> &#x3001; <code>&quot;Hello World!&quot;</code> &#x306F;&#x6587;&#x5B57;&#x5217;&#x578B;&#x306E;&#x30EA;&#x30C6;&#x30E9;&#x30EB;&#x306E;&#x305F;&#x3081; <strong>&#x6587;&#x5B57;&#x5217;&#x30EA;&#x30C6;&#x30E9;&#x30EB;</strong> &#x3068;&#x547C;&#x3070;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+</div></div></p>
+<h2 id="&#x578B;&#x63A8;&#x8AD6;">&#x578B;&#x63A8;&#x8AD6;</h2>
+<p>Kotlin &#x306F;&#x578B;&#x63A8;&#x8AD6; (type inference) &#x3068;&#x547C;&#x3070;&#x308C;&#x308B;&#x6A5F;&#x80FD;&#x3092;&#x6301;&#x3061;&#x307E;&#x3059;&#x3002;
+&#x578B;&#x63A8;&#x8AD6;&#x3068;&#x306F;&#x3001;&#x6587;&#x5B57;&#x901A;&#x308A;&#x578B;&#x3092;&#x63A8;&#x8AD6;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#x3059;&#x3002;</p>
+<p>&#x3053;&#x308C;&#x307E;&#x3067;&#x306F;&#x5909;&#x6570; <code>helloWorld</code> &#x3092;&#x5BA3;&#x8A00;&#x3059;&#x308B;&#x969B;&#x306B;&#x5FC5;&#x305A;&#x578B; <code>String</code> &#x3092;&#x6307;&#x5B9A;&#x3057;&#x3066;&#x304D;&#x307E;&#x3057;&#x305F;&#x3002;
+&#x3067;&#x3059;&#x304C;&#x3001;&#x5909;&#x6570; <code>helloWorld</code> &#x306B;&#x4EE3;&#x5165;&#x3059;&#x308B;&#x5024;&#x306F;&#x6587;&#x5B57;&#x5217;&#x30EA;&#x30C6;&#x30E9;&#x30EB; <code>&quot;Hello World!&quot;</code> &#x3067;&#x3059;&#x3002;</p>
+<p>&#x5909;&#x6570;&#x306B;&#x683C;&#x7D0D;&#x3055;&#x308C;&#x308B;&#x5024;&#x306E;&#x578B;&#x304C;&#x4E88;&#x3081;&#x63A8;&#x6E2C;&#x304C;&#x53EF;&#x80FD;&#x306A;&#x5834;&#x5408;&#x306F;&#x3001;&#x578B;&#x306E;&#x6307;&#x5B9A;&#x3092;&#x7701;&#x7565;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-kotlin"><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-variable"><span class="hljs-keyword">val</span> helloWorld</span> = <span class="hljs-string">&quot;Hello World!&quot;</span>
+    println(helloWorld)
+}
+</code></pre>
+<p>&#x578B;&#x540D;&#x306E;&#x6307;&#x5B9A;&#x3092;&#x7701;&#x7565;&#x3067;&#x304D;&#x308B;&#x5834;&#x5408;&#x306F;&#x3001; IntellIJ IDEA &#x5909;&#x6570;&#x306E;&#x578B;&#x540D;&#x304C;&#x30B0;&#x30EC;&#x30FC;&#x30A2;&#x30A6;&#x30C8;&#x3055;&#x305B;&#x3001; &quot;Explicitly given type is redundant here&quot; (&#x3053;&#x3053;&#x3067;&#x306F;&#x660E;&#x793A;&#x7684;&#x306A;&#x578B;&#x306E;&#x4ED8;&#x4E0E;&#x306F;&#x4F59;&#x5206;)
+&#x3068;&#x6559;&#x3048;&#x3066;&#x304F;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x4F59;&#x5206;&#x3068;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x578B;&#x540D;&#x306B;&#x30AB;&#x30FC;&#x30BD;&#x30EB;&#x3092;&#x3042;&#x308F;&#x305B; Option + Enter (Mac) &#x307E;&#x305F;&#x306F; Alt + Enter (Windows) &#x3092;&#x62BC;&#x3057;&#x3001; &quot;Remove explicit type specification&quot; (&#x660E;&#x793A;&#x7684;&#x306A;&#x578B;&#x306E;&#x6307;&#x5B9A;&#x306E;&#x9664;&#x53BB;)
+&#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#x3001;&#x4F59;&#x5206;&#x306A;&#x578B;&#x306E;&#x6307;&#x5B9A;&#x3092;&#x9664;&#x53BB;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>&#x512A;&#x79C0;&#x306A; Option + Enter / Alt + Enter</p>
+<p>IntelliJ IDEA &#x306F;&#x30BD;&#x30FC;&#x30B9;&#x30B3;&#x30FC;&#x30C9;&#x306B;&#x5BFE;&#x3057;&#x69D8;&#x3005;&#x306A;&#x610F;&#x898B;&#x3092;&#x63D0;&#x793A;&#x3057;&#x3066;&#x304F;&#x308C;&#x307E;&#x3059;&#x3002;
+&#x5197;&#x9577;&#x306A;&#x578B;&#x60C5;&#x5831;&#x306E;&#x4ED8;&#x4E0E;&#x3060;&#x3051;&#x3067;&#x306F;&#x306A;&#x304F;&#x3001; typo (&#x8AA4;&#x5B57;&#x8131;&#x5B57;) &#x3084;&#x5909;&#x6570;&#x5BA3;&#x8A00;&#x30AD;&#x30FC;&#x30EF;&#x30FC;&#x30C9;&#x306E;&#x5909;&#x66F4;&#x3001;&#x305D;&#x306E;&#x4ED6;&#x305F;&#x304F;&#x3055;&#x3093;&#x306E;&#x4FEE;&#x6B63;&#x3092;&#x63D0;&#x6848;&#x3057;&#x3066;&#x304F;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x591A;&#x304F;&#x306E;&#x5834;&#x5408;&#x306F;&#x63D0;&#x6848;&#x306B;&#x5F93;&#x3046;&#x3068;&#x3088;&#x308A;&#x826F;&#x3044;&#x30BD;&#x30FC;&#x30B9;&#x30B3;&#x30FC;&#x30C9;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x304C;&#x3001;&#x5076;&#x306B;&#x671F;&#x5F85;&#x3057;&#x306A;&#x3044;&#x5909;&#x66F4;&#x3092;&#x3055;&#x308C;&#x308B;&#x5834;&#x5408;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;
+&#x4F55;&#x3092;&#x63D0;&#x6848;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x306E;&#x304B;&#x7406;&#x89E3;&#x3057;&#x305F;&#x4E0A;&#x3067;&#x3001;&#x4FEE;&#x6B63;&#x3059;&#x308B; / &#x3057;&#x306A;&#x3044;&#x3092;&#x5224;&#x65AD;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+</div></div></p>
+<script type="text/javascript">var targetUl = document.getElementsByClassName('page-inner')[0].getElementsByTagName('ul')[0];if(targetUl.getElementsByTagName('a').length>0){targetUl.className='toc';}</script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="variable.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 変数">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"型","level":"1.3.2","depth":2,"previous":{"title":"変数","level":"1.3.1","depth":2,"path":"chapter02/variable.md","ref":"chapter02/variable.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hints","codeblock-filename","toc"],"pluginsConfig":{"toc":{"addClass":true,"className":"toc"},"search":{},"hints":{"danger":"fa fa-exclamation-cicle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"codeblock-filename":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter02/type.md","mtime":"2020-01-02T16:31:14.841Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-02T16:45:42.164Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
