@@ -1,7 +1,8 @@
 {
   "plugins": [
     "hints",
-    "codeblock-filename"
+    "codeblock-filename",
+    "toc"
   ],
   "pluginsConfig": {
     "hints": {
@@ -9,6 +10,10 @@
       "tip": "fa fa-mortar-board",
       "danger": "fa fa-exclamation-cicle",
       "working": "fa fa-wrench"
+    },
+    "toc": {
+      "addClass": true,
+      "className": "toc"
     }
   }
 }
