@@ -6,7 +6,7 @@ Java 等の他のプログラミング言語の経験者で Kotlin の勉強を�
 [kotlin reference]: https://kotlinlang.org/docs/reference/
 [kotlin koans]: https://kotlinlang.org/docs/tutorials/koans.html
 
-## [Kotlin](https://kotlinlang.org/) とは
+## [Kotlin](https://kotlinlang.org/) について
 Java、Ruby、Python などのプログラミング言語による開発環境の開発および販売をしている [JetBrains 社](https://www.jetbrains.com/)
 によって開発されたプログラミング言語です。
 2011 年に発表され、2020年1月1日現在の最新版は [1.3.61](https://blog.jetbrains.com/kotlin/2019/11/kotlin-1-3-60-released/)
