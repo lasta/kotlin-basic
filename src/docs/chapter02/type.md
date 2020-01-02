@@ -73,7 +73,7 @@ fun main() {
 
 これを実行すると、 `"Hello World!"` ではなく `42` が出力されます。
 
-{% hint style="tip" %}
+{% hint style="info" %}
 リテラル
 
 ソースコード上に直接埋め込まれた値のこと
