@@ -48,7 +48,7 @@ fun main() {
 変数に代入した値を利用すること
 {% endhint %}
 
-{% hint style="tip" %}
+{% hint style="info" %}
 初期化 (initialization)
 
 ある変数に初めて代入を行うこと
