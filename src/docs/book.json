@@ -2,7 +2,8 @@
   "plugins": [
     "hints",
     "codeblock-filename",
-    "toc"
+    "toc",
+    "tree"
   ],
   "pluginsConfig": {
     "hints": {
