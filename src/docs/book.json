@@ -3,7 +3,8 @@
     "hints",
     "codeblock-filename",
     "toc",
-    "tree"
+    "tree",
+    "mathjax"
   ],
   "pluginsConfig": {
     "hints": {
