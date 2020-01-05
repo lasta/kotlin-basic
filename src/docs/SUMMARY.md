@@ -10,6 +10,8 @@
     * [数の演算](chapter03/numeric_operation.md)
     * [文字列](chapter03/string.md)
     * [文字列の演算](chapter03/string_operation.md)
+    * [真偽値](chapter03/boolean.md)
+    * [真偽値の演算](chapter03/boolean_operation.md)
 * Chapter 4 - 制御構文
 * Chapter 5 - 関数
 * Chapter 6 - 無名関数
