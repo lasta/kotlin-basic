@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    "hints",
+    "codeblock-filename",
+    "toc",
+    "tree",
+    "mathjax"
+  ],
+  "pluginsConfig": {
+    "hints": {
+      "info": "fa fa-info-circle",
+      "tip": "fa fa-mortar-board",
+      "danger": "fa fa-exclamation-cicle",
+      "working": "fa fa-wrench"
+    },
+    "toc": {
+      "addClass": true,
+      "className": "toc"
+    }
+  }
+}
