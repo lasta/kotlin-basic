@@ -64,9 +64,43 @@ Unicode 文字参照を用いることで、 UTF-16 で扱えるすべての文�
 文字列リテラル (複数の文字) はダブルクオーテーション `"` で囲みます。
 最初に記述した [Hello World](../chapter01/hello_world.md) の `"Hello World!"` も文字列リテラルです。
 
-<!-- TODO
-* for 文でまわすと char を取り出せる話
-* String Literal (\n を用いたやつ
-* Raw String (""" ... """)
-* String Template ("i = $i")
--->
+```kotlin
+val helloWorld: String = "Hello World!"
+println(helloWorld) // Hello World!
+```
+
+エスケープシーケンスは文字なので、文字列型に含めることができます。
+
+```kotlin
+val helloWorld: String = "Hello\nWorld!"
+println(helloWorld) // Hello
+                    // World!
+```
+
+### 生文字列 (Raw String `"""`)
+`Hello\nWorld!` くらいであれば可読性は悪くないですが、できれば見た目通りの出力をしてほしい場合があります。
+先述の `"` で囲った文字列リテラルでは、改行文字以外で改行をすることができません。
+
+```
+// 文法エラー
+val helloWorld: String = "Hello
+World!"
+```
+
+その場合は Raw String `"""` を用いると便利です。
+Raw String 内の改行はそのまま出力されます。
+
+```kotlin
+val helloWorld: String = """Hello
+World!"""
+println(helloWorld) // Hello
+                    // World!
+```
+
+### テンプレート文字列 (String Template)
+`$変数名` または `${変数名}` を文字列リテラル内に含めることで、変数の値を含めることができます。
+
+```kotlin
+val hello = "Hello"
+println("$hello World!") // Hello World!
+```
