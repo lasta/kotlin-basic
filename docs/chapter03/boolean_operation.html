@@ -735,7 +735,7 @@ println(a1 == b1) <span class="hljs-comment">// false</span>
 println(b1 == c) <span class="hljs-comment">// true</span>
 </code></pre>
 <p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>Java &#x306E; <code>Objects.equals(Object a, Object b)</code> &#x306B;&#x76F8;&#x5F53;&#x3057;&#x307E;&#x3059;&#x3002;
-Java &#x306E; <code>==</code> &#x3068;&#x306F;&#x9055;&#x3046;&#x3053;&#x3068;&#x306B;&#x6CE8;&#x610F;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+Java &#x306E;&#x540C;&#x5024;&#x6F14;&#x7B97;&#x5B50; <code>==</code> &#x3068;&#x306F;&#x7570;&#x306A;&#x308B;&#x3053;&#x3068;&#x306B;&#x6CE8;&#x610F;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
 </div></div></p>
 <h4 id="&#x540C;&#x5024;&#x53C2;&#x7167;-">&#x540C;&#x5024;&#x53C2;&#x7167; <code>===</code></h4>
 <p>&#x540C;&#x4E00;&#x306E;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x304B;&#x3069;&#x3046;&#x304B;&#x5224;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x3002;</p>
@@ -751,16 +751,62 @@ println(str1 === str3) <span class="hljs-comment">// true</span>
 </code></pre>
 <p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>Java &#x306E; <code>==</code> &#x306B;&#x76F8;&#x5F53;&#x3057;&#x307E;&#x3059;&#x3002;</p>
 </div></div></p>
-<h4 id="&#x5927;&#x5C0F;----">&#x5927;&#x5C0F; <code>&gt;</code>, <code>=&gt;</code>, <code>&lt;</code>, <code>&lt;=</code></h4>
+<h4 id="&#x5927;&#x5C0F;----">&#x5927;&#x5C0F; <code>&gt;</code>, <code>&gt;=</code>, <code>&lt;</code>, <code>&lt;=</code></h4>
+<p>&#x6BD4;&#x8F03;&#x53EF;&#x80FD;&#x306A; 2 &#x3064;&#x306E;&#x5024;&#x3092;&#x6BD4;&#x8F03;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> three</span>: <span class="hljs-keyword">Int</span> = <span class="hljs-number">3</span>
+<span class="hljs-variable"><span class="hljs-keyword">val</span> two</span>: <span class="hljs-keyword">Int</span> = <span class="hljs-number">2</span>
+
+println(two &gt; three) <span class="hljs-comment">// false</span>
+println(two &gt;= three) <span class="hljs-comment">// false</span>
+println(two <span class="hljs-type">&lt; three) // true
+println(two &lt;= three) // true
+</span></code></pre>
+<p>&#x6570;&#x5024;&#x4EE5;&#x5916;&#x306E;&#x6BD4;&#x8F03;&#x3082;&#x53EF;&#x80FD;&#x3067;&#x3059;&#x3002;
+&#x4F8B;&#x3048;&#x3070;&#x6587;&#x5B57;&#x5217;&#x578B; <code>String</code> &#x306E;&#x5834;&#x5408;&#x3001; UTF-16 &#x306E;&#x30B3;&#x30FC;&#x30C9;&#x9806; (&#x304A;&#x304A;&#x3088;&#x305D;&#x8F9E;&#x66F8;&#x9806;) &#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> a</span>: String = <span class="hljs-string">&quot;a&quot;</span>
+<span class="hljs-variable"><span class="hljs-keyword">val</span> b</span>: String = <span class="hljs-string">&quot;b&quot;</span>
+
+println(a &gt; b) <span class="hljs-comment">// false</span>
+println(a &gt;= b) <span class="hljs-comment">// false</span>
+println(a <span class="hljs-type">&lt; b) // true
+println(a &lt;= b) // true
+</span></code></pre>
 <h3 id="&#x6587;&#x5B57;&#x5217;&#x306E;&#x6F14;&#x7B97;">&#x6587;&#x5B57;&#x5217;&#x306E;&#x6F14;&#x7B97;</h3>
-<!-- TODO:
-* in
-* isEmpty / isNotEmpty
-* isBlank / isNotBlank
-* contains
-* startsWith
-* endsWith
--->
+<h4 id="&#x542B;&#x307E;&#x308C;&#x308B;&#x304B;&#x3069;&#x3046;&#x304B;-in-contains">&#x542B;&#x307E;&#x308C;&#x308B;&#x304B;&#x3069;&#x3046;&#x304B; <code>in</code>, <code>contains</code></h4>
+<p>&#x6307;&#x5B9A;&#x3057;&#x305F;&#x6587;&#x5B57;&#x5217;&#x304C;&#x5225;&#x306E;&#x6587;&#x5B57;&#x5217;&#x306B;&#x542B;&#x307E;&#x308C;&#x308B;&#x304B;&#x3069;&#x3046;&#x304B;&#x5224;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x3002;
+<code>in</code> &#x3068; <code>contains</code> &#x306F;&#x540C;&#x3058;&#x52D5;&#x4F5C;&#x3092;&#x3057;&#x307E;&#x3059;&#x304C;&#x3001;&#x8A18;&#x6CD5;&#x304C;&#x7570;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> helloWorld</span> = <span class="hljs-string">&quot;Hello World!&quot;</span>
+<span class="hljs-variable"><span class="hljs-keyword">val</span> he</span> = <span class="hljs-string">&quot;He&quot;</span>
+
+println(he <span class="hljs-keyword">in</span> helloWorld) <span class="hljs-comment">// true</span>
+println(helloWorld.contains(he)) <span class="hljs-comment">// true</span>
+</code></pre>
+<h4 id="&#x7A7A;&#x304B;&#x3069;&#x3046;&#x304B;-isempty-isnotempty">&#x7A7A;&#x304B;&#x3069;&#x3046;&#x304B; <code>isEmpty</code>, <code>isNotEmpty</code></h4>
+<p>&#x5909;&#x6570;&#x306E;&#x5024;&#x304C;&#x7A7A;&#x6587;&#x5B57; (0&#x6587;&#x5B57;) &#x304B;&#x3069;&#x3046;&#x304B;&#x5224;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x3002;
+<code>isNotEmpty</code> &#x306F;&#x7A7A;&#x6587;&#x5B57;&#x3067;&#x306F;&#x306A;&#x3044;&#x5834;&#x5408; <code>true</code> &#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> emptyString</span> = <span class="hljs-string">&quot;&quot;</span>
+println(emptyString.isEmpty()) <span class="hljs-comment">// true</span>
+println(emptyString.isNotEmpty()) <span class="hljs-comment">//false</span>
+
+<span class="hljs-variable"><span class="hljs-keyword">val</span> helloWorld</span> = <span class="hljs-string">&quot;Hello World!&quot;</span>
+println(helloWorld.isEmpty()) <span class="hljs-comment">// false</span>
+println(helloWorld.isNotEmpty()) <span class="hljs-comment">// true</span>
+</code></pre>
+<h4 id="&#x7A7A;&#x767D;&#x306E;&#x307F;&#x304B;&#x3069;&#x3046;&#x304B;-isblank-isnotblank">&#x7A7A;&#x767D;&#x306E;&#x307F;&#x304B;&#x3069;&#x3046;&#x304B; <code>isBlank</code>, <code>isNotBlank</code></h4>
+<p>&#x5909;&#x6570;&#x306E;&#x6587;&#x5B57;&#x304C;&#x7A7A;&#x6587;&#x5B57;&#x307E;&#x305F;&#x306F;&#x7A7A;&#x767D;&#x6587;&#x5B57;&#x306E;&#x307F;&#x304B;&#x3069;&#x3046;&#x304B;&#x5224;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x3002;
+&#x534A;&#x89D2;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x3001;&#x5168;&#x89D2;&#x30B9;&#x30DA;&#x30FC;&#x30B9;&#x3001;&#x30BF;&#x30D6;&#x6587;&#x5B57;&#x3001;&#x6539;&#x884C;&#x6587;&#x5B57;&#x306A;&#x3069;&#x304C;&#x7A7A;&#x767D;&#x6587;&#x5B57;&#x3068;&#x3057;&#x3066;&#x5224;&#x5B9A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-kotlin"><span class="hljs-variable"><span class="hljs-keyword">val</span> emptyString</span> = <span class="hljs-string">&quot;&quot;</span>
+println(emptyString.isBlank()) <span class="hljs-comment">// true</span>
+println(emptyString.isNotBlank()) <span class="hljs-comment">//false</span>
+
+<span class="hljs-variable"><span class="hljs-keyword">val</span> blankString</span> = <span class="hljs-string">&quot; \t   \n    &quot;</span>
+println(blankString.isBlank()) <span class="hljs-comment">// true</span>
+println(blankString.isNotBlank()) <span class="hljs-comment">// false</span>
+
+<span class="hljs-variable"><span class="hljs-keyword">val</span> helloWorld</span> = <span class="hljs-string">&quot;Hello World!&quot;</span>
+println(helloWorld.isBlank()) <span class="hljs-comment">// false</span>
+println(helloWorld.isNotBlank()) <span class="hljs-comment">// true</span>
+</code></pre>
 <script type="text/javascript">var targetUl = document.getElementsByClassName('page-inner')[0].getElementsByTagName('ul')[0];if(targetUl.getElementsByTagName('a').length>0){targetUl.className='toc';}</script>
                                 
                                 </section>
@@ -800,7 +846,7 @@ println(str1 === str3) <span class="hljs-comment">// true</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"真偽値の演算","level":"1.4.6","depth":2,"next":{"title":"Chapter 4 - 制御構文","level":"1.5","depth":1,"ref":"","articles":[]},"previous":{"title":"真偽値","level":"1.4.5","depth":2,"path":"chapter03/boolean.md","ref":"chapter03/boolean.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hints","codeblock-filename","toc","tree","mathjax"],"pluginsConfig":{"toc":{"addClass":true,"className":"toc"},"search":{},"hints":{"danger":"fa fa-exclamation-cicle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"codeblock-filename":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"tree":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter03/boolean_operation.md","mtime":"2020-02-10T07:49:01.066Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-10T07:49:54.672Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"真偽値の演算","level":"1.4.6","depth":2,"next":{"title":"Chapter 4 - 制御構文","level":"1.5","depth":1,"ref":"","articles":[]},"previous":{"title":"真偽値","level":"1.4.5","depth":2,"path":"chapter03/boolean.md","ref":"chapter03/boolean.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["hints","codeblock-filename","toc","tree","mathjax"],"pluginsConfig":{"toc":{"addClass":true,"className":"toc"},"search":{},"hints":{"danger":"fa fa-exclamation-cicle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"codeblock-filename":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"tree":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter03/boolean_operation.md","mtime":"2020-02-11T09:10:15.471Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-11T23:47:11.301Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
