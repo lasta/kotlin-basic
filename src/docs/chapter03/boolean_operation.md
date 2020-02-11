@@ -108,7 +108,7 @@ println(b1 == c) // true
 
 {% hint style="tip" %}
 Java の `Objects.equals(Object a, Object b)` に相当します。
-Java の `==` とは違うことに注意してください。
+Java の同値演算子 `==` とは異なることに注意してください。
 {% endhint %}
 
 #### 同値参照 `===`
@@ -130,17 +130,73 @@ println(str1 === str3) // true
 Java の `==` に相当します。
 {% endhint %}
 
+#### 大小 `>`, `>=`, `<`, `<=`
+比較可能な 2 つの値を比較します。
 
-#### 大小 `>`, `=>`, `<`, `<=`
+```kotlin
+val three: Int = 3
+val two: Int = 2
 
+println(two > three) // false
+println(two >= three) // false
+println(two < three) // true
+println(two <= three) // true
+```
+
+数値以外の比較も可能です。
+例えば文字列型 `String` の場合、 UTF-16 のコード順 (おおよそ辞書順) になります。
+
+```kotlin
+val a: String = "a"
+val b: String = "b"
+
+println(a > b) // false
+println(a >= b) // false
+println(a < b) // true
+println(a <= b) // true
+```
 
 ### 文字列の演算
+#### 含まれるかどうか `in`, `contains`
+指定した文字列が別の文字列に含まれるかどうか判定します。
+`in` と `contains` は同じ動作をしますが、記法が異なります。
 
-<!-- TODO:
-* in
-* isEmpty / isNotEmpty
-* isBlank / isNotBlank
-* contains
-* startsWith
-* endsWith
--->
+```kotlin
+val helloWorld = "Hello World!"
+val he = "He"
+
+println(he in helloWorld) // true
+println(helloWorld.contains(he)) // true
+```
+
+#### 空かどうか `isEmpty`, `isNotEmpty`
+変数の値が空文字 (0文字) かどうか判定します。
+`isNotEmpty` は空文字ではない場合 `true` になります。
+
+```kotlin
+val emptyString = ""
+println(emptyString.isEmpty()) // true
+println(emptyString.isNotEmpty()) //false
+
+val helloWorld = "Hello World!"
+println(helloWorld.isEmpty()) // false
+println(helloWorld.isNotEmpty()) // true
+```
+
+#### 空白のみかどうか `isBlank`, `isNotBlank`
+変数の文字が空文字または空白文字のみかどうか判定します。
+半角スペース、全角スペース、タブ文字、改行文字などが空白文字として判定されます。
+
+```kotlin
+val emptyString = ""
+println(emptyString.isBlank()) // true
+println(emptyString.isNotBlank()) //false
+
+val blankString = " \t   \n    "
+println(blankString.isBlank()) // true
+println(blankString.isNotBlank()) // false
+
+val helloWorld = "Hello World!"
+println(helloWorld.isBlank()) // false
+println(helloWorld.isNotBlank()) // true
+```
