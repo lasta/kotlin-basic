@@ -1,6 +1,8 @@
 # if 式
 if 式はその名の通り、「もし A ならば」を表現する制御構文です。
 
+<!-- toc -->
+
 ## if 式の基本構文
 基本的な書式は下記のとおりです。
 
@@ -99,8 +101,7 @@ Java や C 系の言語を学んだ人ならば *三項演算子* を知って�
 
 三項演算子を使わない場合は下記になります。
 
-```java
-// Java
+```java:Main.java
 public class Main {
     public static void main(String[] args) {
         final int number = -5;
@@ -122,8 +123,7 @@ Java では if は式ではなく文のため、値を返す事ができませ�
 
 変数を初期化せずに放置するめことを嫌う場合、下記のように三項演算子を用いて書きます。
 
-```java
-// Java
+```java:Main.java
 public class Main {
     public static void main(String[] args){
         final int number = -5;
@@ -137,8 +137,7 @@ public class Main {
 Kotlin では if が式であるため、三項演算子 `? :` を用いずに表現可能です。
 上記の Java プログラムを Kotlin で表現すると、前述のコードになります。
 
-```kotlin
-// Kotlin
+```kotlin:Main.kt
 fun main() {
     val number = -5
 
@@ -187,23 +186,36 @@ println(sign) // ???
 val number = -5
 
 val sign =
-        // 1 つ目の if 式
         if (number < 0) {
             "negative"
-        } else
-
-        // 2 つ目の if 式
-        (if (number > 0) {
+        } else /* ここから 2 つ目の if 式 */ if (number > 0) {
             "positive"
         } else {
             "zero"
-        }.toUpperCase())
+        }.toUpperCase()
 
 println(sign)
 ```
 
 `else` の後の if 式は前の if 式とは無関係になります。
 そのため、 `"positive"` と `"zero"` は大文字になりますが、 `"negative"` のみ小文字のままになります。
+
+`"negative"` の場合も大文字にしたい場合は下記のように記述する必要があります。
+
+```kotlin
+val number = -5
+
+val sign = (
+        if (number < 0) {
+            "negative"
+        } else if (number > 0) {
+            "positive"
+        } else {
+            "zero"
+        }).toUpperCase()
+
+println(sign)
+```
 
 ## 色々な書き方
 if 式の処理が 1 行の場合、中括弧 `{ }` を省略することができます。
