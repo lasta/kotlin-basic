@@ -26,7 +26,7 @@
     * 関数参照
 * Chapter 7 - null と null 安全
 * Chapter 8 - 例外
-* Chapter 9 - コレクション
+* [Chapter 9 - コレクション](chapter09/chapter09.md)
     * List
     * Set
     * Map
