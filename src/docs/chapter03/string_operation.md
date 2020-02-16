@@ -40,9 +40,7 @@ println(split[0]) // Hello
 println(split[1]) // World!
 ```
 
-<!-- TODO: Link to chapter 9 collection -->
-
-`List<String>` については、 9章「コレクション」で詳しく扱います。
+`List<String>` については、 [9章「コレクション」](../chapter09/chapter09.md) で詳しく扱います。
 
 ## 添字アクセス `[]`
 指定した文字番目の文字を取り出すことができます。

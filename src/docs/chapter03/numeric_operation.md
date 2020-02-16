@@ -112,8 +112,7 @@ public class Main {
 }
 ```
 
-<!-- TODO: link to Collection chapter -->
-詳しくは 9 章「コレクション」の「繰り返し処理」にて解説しますが、 Kotlin にはこのような for 文はありません。
+詳しくは [9 章「コレクション」](../chpater09/chapter09.md) の「繰り返し処理」にて解説しますが、 Kotlin にはこのような for 文はありません。
 似たようなことを行いたい場合、下記のように記述します。
 
 ```kotlin
