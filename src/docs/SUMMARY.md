@@ -12,7 +12,12 @@
     * [文字列の演算](chapter03/string_operation.md)
     * [真偽値](chapter03/boolean.md)
     * [真偽値の演算](chapter03/boolean_operation.md)
-* Chapter 4 - 制御構文
+* [Chapter 4 - 制御構文](chapter04/chapter04.md)
+    * [if 式](chapter04/if.md)
+    * [範囲 (range)](chapter04/range.md)
+    * [when 式](chapter04/when.md)
+    * [for ループ](chapter04/for.md)
+    * [while ループ](chapter04/while.md)
 * Chapter 5 - 関数
 * Chapter 6 - 無名関数
     * 無名関数 (ラムダ式)
